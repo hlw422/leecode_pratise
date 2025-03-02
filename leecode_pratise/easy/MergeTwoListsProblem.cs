@@ -3,7 +3,8 @@ namespace leecode_pratise.easy;
 public class MergeTwoListsProblem
 {
     /*
- 合并两个有序链表 0 ms 击败100.00%
+ 
+ wpsgit合并两个有序链表 0 ms 击败100.00%
  */
     public ListNode MergeTwoLists(ListNode list1, ListNode list2)
     {
