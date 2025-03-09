@@ -2,7 +2,7 @@ namespace leecode_pratise.huawei;
 
 public class question
 {
-    public static void Main()
+    public static void Main1()
     {
         HJ15();
     }
