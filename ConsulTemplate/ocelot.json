@@ -1,0 +1,23 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{controller}", 
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/api/product/{controller}", 
+      "UpstreamHttpMethod": [], 
+      "ServiceName": "api-product-service", 
+      "LoadBalancerOptions": {
+        "Type": "LeastConnection"
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5015",
+    "ServiceDiscoveryProvider": {
+      "Scheme": "http",
+      "Host": "127.0.0.1", 
+      "Port": 8500, 
+      "Type": "Consul"
+    }
+  }
+}
